@@ -1,0 +1,13 @@
+[package]
+name = "mimic-arg"
+version = "0.1.0"
+authors = ["impactaky"]
+edition = "2021"
+
+[dependencies]
+deno_bindgen = "0.8.1"
+
+[lib]
+name = "mimic_gcc"
+path = "gcc.rs"
+crate-type = ["cdylib"]
